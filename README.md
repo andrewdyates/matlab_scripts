@@ -1,5 +1,9 @@
 Quantile normalize a .tab text array in MATLAB.
 
+WARNING
+=======
+This code truncates matrices on borel. Do not use until a fix can be found.
+
 Given a path to a .tab file of floats like '~/data/GSE7307.raw.tab', this program generates in the same path:
 
 * ~/data/GSE7307.raw.tab.eps --- boxplot of unnormalized arrays in eps format

@@ -8,7 +8,9 @@ newData1 = importdata(fileToRead);
 vars = fieldnames(newData1);
 for i = 1:length(vars)
     if strcmp(vars{i}, 'data')
+	display(size(newData1.(vars{i})))
         M = newData1.(vars{i});
+        display(size(M))
     end
 end
 
